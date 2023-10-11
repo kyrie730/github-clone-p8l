@@ -4,7 +4,6 @@ import {
   type DefaultSession,
   type NextAuthOptions,
 } from "next-auth";
-import DiscordProvider from "next-auth/providers/discord";
 import GithubProvider from "next-auth/providers/github";
 
 /**
@@ -35,13 +34,9 @@ declare module "next-auth" {
  */
 export const authOptions: NextAuthOptions = {
   providers: [
-    // DiscordProvider({
-    //   clientId: "1157501576932499527",
-    //   clientSecret: "czXUX5PtGThf0dzUNMs6eXA3ohqkOKzn",
-    // }),
     GithubProvider({
-      clientId: 'e78fd4e91fc58ee10889',
-      clientSecret: '1f474e095c6d2e1342c54865eccec58294d9ddd9'
+      clientId: process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID || '',
+      clientSecret: process.env.NEXT_PUBLIC_GITHUB_CLIENT_SECRET || ''
     })
     /**
      * ...add more providers here.

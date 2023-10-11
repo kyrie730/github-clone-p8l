@@ -47,7 +47,6 @@ export default function WithAction({children}:Props) {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const session = useSession()
-  const router = useRouter()
 
   return (
     <>

@@ -1,4 +1,4 @@
-import { GetRepositoriesDto, RemoteRepositoryImpl, RepositoriesEntity, RepositoryEntity } from "libs/GithubPublic"
+import { GetRepositoriesDto, RemoteRepositoryImpl, RepositoriesEntity } from "libs/GithubPublic"
 import { useCallback, useState } from "react"
 
 interface Return{

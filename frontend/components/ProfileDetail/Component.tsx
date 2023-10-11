@@ -1,5 +1,5 @@
 import { EmailIcon } from "@chakra-ui/icons";
-import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
+import { Flex, Icon, Image, Text } from "@chakra-ui/react";
 import useProfileDetailViewModel from "./ViewModel";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
